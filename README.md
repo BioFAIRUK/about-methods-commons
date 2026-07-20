@@ -13,18 +13,24 @@ no theme files are forked:
 
 | File | Purpose |
 |---|---|
-| `_sass/_bootstrap_variables.scss` | Brand colours, the Space Grotesk / IBM Plex fonts, radii |
-| `_sass/_custom_classes.scss` | Eyebrow label, hero, soft-tint utilities |
+| `_sass/_bootstrap_variables.scss` | Brand colours, fonts, radii |
+| `_sass/_custom_classes.scss` | Eyebrow label, hero, strapline, tint utilities |
 | `_config.yml` → `theme_variables` | Logo, theme colour, Google Fonts, top-nav options |
-| `assets/img/` | BioFAIR logo (`biofair-logo.svg`) and generated favicons |
+| `assets/img/` | BioFAIR logo (`biofair-logo.png`) and generated favicons |
 
-Colours and type mirror the design system's `tokens.css` (`--bf-*`): emerald
-`#00A070` / emerald-deep `#00785A`, raspberry `#E0115F` / `#B00C4C`, ink
-`#14130F`; Space Grotesk (display), IBM Plex Sans (body), IBM Plex Mono (code).
+Colours and type follow the official **BioFAIR Brand Guidelines (2024)**
+(kept locally under `notes/`, which is git-ignored and not published):
 
-> Emerald-deep `#00785A` is used as the functional `$primary` because vivid
-> emerald fails WCAG contrast as text/label colour — this is the design
-> system's own rule.
+- **Green** `#54A174`, **pink** `#AC2650`, **black** `#000000`, secondary
+  background grey `#ECEFEE`.
+- Type: the brand's **Avenir Next** is not licensable for web embedding, so
+  **Nunito Sans** (its closest free substitute) is used for display + body,
+  and **PT Sans Caption** (free) matches the logo strapline.
+
+> Two web-only adjustments: the functional `$primary` uses a slightly
+> darkened green `#3E7D57` (≈4.9:1 on white) because the brand green fails
+> WCAG AA as small text; the vivid `#54A174` is kept for large/decorative
+> use (e.g. the hero eyebrow on black).
 
 ## Run locally
 

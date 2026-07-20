@@ -28,12 +28,12 @@ theme: elixir-toolkit-theme
 # BioFAIR branding
 #####################################################################
 theme_variables:
-  theme_color: "00785A"          # emerald-deep — browser UI + manifest
+  theme_color: "54A174"          # BioFAIR brand green — browser UI + manifest
   back_to_top: true
   breadcrumb: false
   topnav:
     theme: light
-    brand_logo: assets/img/biofair-logo.svg
+    brand_logo: assets/img/biofair-logo.png
     search: true
     github: false
   # Per-page edit / issue / history buttons — off until a GitHub repo
@@ -42,9 +42,10 @@ theme_variables:
     edit_me: false
     open_issue: false
     history: false
-  # Space Grotesk + IBM Plex Sans/Mono — the BioFAIR type pairing.
+  # Nunito Sans (free stand-in for the brand's Avenir Next) + PT Sans
+  # Caption (matches the logo strapline).
   fonts:
-    - https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap
+    - https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&family=PT+Sans+Caption:wght@400;700&display=swap
   headings:
     related-pages: Related pages
     more-information-tiles: More information
@@ -61,6 +62,7 @@ exclude:
   - LICENSE
   - README.md
   - vendor
+  - notes            # internal planning material — never published
 
 defaults:
   - scope:

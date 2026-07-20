@@ -1,40 +1,37 @@
 /* =========================================================
    BioFAIR custom classes — loaded last, on top of the theme.
-   Small, brand-specific additions only; the heavy lifting is
-   done by the Bootstrap variable overrides.
+   Colours/type per the official BioFAIR Brand Guidelines (2024).
    ========================================================= */
 
-/*-----Top navigation active underline in brand emerald (already
-       inherits $primary from the theme; kept for the mobile logo)-----*/
+/*-----Top-nav wordmark sizing-----*/
 header .navbar .navbar-brand img {
-    max-height: 40px;   // wordmark reads well at this height
+    max-height: 40px;
 }
 
-/*-----Display headings — Space Grotesk with brand tracking-----*/
-#main h1,
-#main h2,
-.h2-like {
-    letter-spacing: -0.02em;
-}
-#main h1 { letter-spacing: -0.03em; }
-
-/*-----Eyebrow label (mono, uppercase) — mirrors .bf-eyebrow token-----*/
+/*-----Eyebrow label (mono-ish, uppercase) in brand green-----*/
 .bf-eyebrow {
-    font-family: $font-family-monospace;
+    font-family: $font-family-sans-serif;
     font-size: 0.72rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    color: $primary;
+    color: $primary;           // web-tuned green on light
 }
 
-/*-----Soft brand tints (from --bf-emerald-soft / --bf-raspberry-soft)-----*/
-.bf-bg-emerald-soft   { background-color: #E8F4EE; }
-.bf-bg-raspberry-soft { background-color: #FDE7EE; }
+/*-----Strapline set in PT Sans Caption, matching the logo lockup-----*/
+.bf-strapline {
+    font-family: "PT Sans Caption", $font-family-sans-serif;
+    font-weight: 400;
+}
 
-/*-----Home hero — ink surface with the brand emerald accent-----*/
+/*-----Soft brand tints (secondary grey + light green/pink washes)-----*/
+.bf-bg-grey       { background-color: #ECEFEE; }
+.bf-bg-green-soft { background-color: #E6F1EB; }   // ~8% brand green on white
+.bf-bg-pink-soft  { background-color: #F7E4EA; }   // ~8% brand pink on white
+
+/*-----Home hero — black surface with the brand green accent-----*/
 .bf-hero {
-    background-color: $dark;              // --bf-ink
+    background-color: $dark;             // brand black
     color: #fff;
     border-radius: $border-radius-lg;
     padding: 3.5rem 2.5rem;
@@ -42,7 +39,7 @@ header .navbar .navbar-brand img {
 
     h1 { color: #fff; }
 
-    .bf-eyebrow { color: #4FD1A6; }       // lightened emerald for dark bg contrast
+    .bf-eyebrow { color: #54A174; }      // brand green reads well on black (≈6.7:1)
 
     .lead { color: rgba(255, 255, 255, 0.82); }
 
@@ -51,14 +48,14 @@ header .navbar .navbar-brand img {
         --bs-btn-bg: #fff;
         --bs-btn-border-color: #fff;
         --bs-btn-hover-color: #{$dark};
-        --bs-btn-hover-bg: #E8F4EE;
-        --bs-btn-hover-border-color: #E8F4EE;
-        font-weight: 600;
+        --bs-btn-hover-bg: #ECEFEE;
+        --bs-btn-hover-border-color: #ECEFEE;
+        font-weight: 700;
     }
 }
 
-/*-----Concentric-arc backdrop echo on the hero (flat strokes,
-       from the .bf-grid-bg token utility — subtle white lines)-----*/
+/*-----Concentric-arc backdrop echo on the hero — flat white
+       strokes referencing the BioFAIR arc mark-----*/
 .bf-hero.bf-grid {
     background-image:
         linear-gradient(to right,  rgba(255,255,255,0.06) 1px, transparent 1px),

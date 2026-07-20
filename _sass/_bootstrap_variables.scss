@@ -1,35 +1,42 @@
 /* =========================================================
    BioFAIR brand → ELIXIR Toolkit Theme (Bootstrap 5 layer)
-   Values mirror the BioFAIR Design System tokens (tokens.css:
-   --bf-*). This file is imported before Bootstrap's own
-   variables, so anything set here wins over the framework
-   defaults and the theme's `!default` fallbacks.
+   Colours + type from the official BioFAIR Brand Guidelines
+   (2024). Imported before Bootstrap's own variables, so these
+   win over the framework defaults and the theme's `!default`s.
    ========================================================= */
 
-/*-----Theme colours-----*/
-/* Emerald-DEEP is the functional primary: it is the colour the
-   design system designates for text, links and UI on light
-   surfaces (vivid emerald #00A070 fails contrast as text/labels).
-   Buttons, links, active states and h2 all derive from $primary. */
-$primary:   #00785A;   // --bf-emerald-deep
-$secondary: #B00C4C;   // --bf-raspberry-deep (sparing accent; drives h4)
-$light:     #F4F4F1;   // --bf-soft-grey
-$dark:      #14130F;   // --bf-ink
+/*-----Brand palette (exact, from the guidelines)-----
+       Green #54A174 · Pink #AC2650 · Black #000000 · Grey #ECEFEE */
+$bf-green:       #54A174;   // brand green — large/decorative use
+$bf-green-text:  #3E7D57;   // web-tuned green for text/links/buttons (WCAG AA on white ≈ 4.9:1)
+$bf-pink:        #AC2650;   // brand pink (AA on white ≈ 6.7:1)
+$bf-black:       #000000;
+$bf-grey:        #ECEFEE;   // secondary background grey
+
+/*-----Bootstrap theme colours-----*/
+/* Green is the primary; the text-tuned shade is used because the
+   brand green fails contrast as small text/labels (this is the
+   only place the exact hex is nudged). Buttons, links, active
+   states and h2 all derive from $primary. */
+$primary:   $bf-green-text;
+$secondary: $bf-pink;        // sparing accent; also drives h4
+$light:     $bf-grey;
+$dark:      $bf-black;
 
 /*-----Body text / links-----*/
-$body-color:      #14130F;   // --bf-ink
-$link-color:      $primary;
-$link-hover-color: #005C45;  // slightly deeper emerald on hover
+$body-color:       $bf-black;
+$link-color:       $primary;
+$link-hover-color: #2F6244;  // slightly deeper green on hover
 
-/*-----Typography (BioFAIR pairing, loaded via Google Fonts in _config.yml)
-       Space Grotesk = display/headings ($font-family-theme)
-       IBM Plex Sans  = body + UI ($font-family-sans-serif / base)
-       IBM Plex Mono  = code/labels ($font-family-monospace) -----*/
-$font-family-sans-serif: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$font-family-theme:      "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+/*-----Typography — Avenir Next is not licensable for web, so its
+       closest free substitute (Nunito Sans) is used for display
+       and body; PT Sans Caption (free) matches the strapline.
+       Loaded via Google Fonts in _config.yml. -----*/
+$font-family-sans-serif: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-theme:      "Nunito Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+$font-family-monospace:  ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 
-/*-----Shape (BioFAIR radii are restrained)-----*/
-$border-radius:    6px;   // --bf-radius-md
-$border-radius-sm: 4px;   // --bf-radius-sm
-$border-radius-lg: 10px;  // --bf-radius-lg
+/*-----Shape-----*/
+$border-radius:    6px;
+$border-radius-sm: 4px;
+$border-radius-lg: 10px;

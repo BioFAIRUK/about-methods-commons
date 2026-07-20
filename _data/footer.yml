@@ -5,7 +5,7 @@ columns:
   - type: image
     image_width: 150px
     width: 3
-    src: 'assets/img/biofair-logo.svg'
+    src: 'assets/img/biofair-logo.png'
     alt: BioFAIR logo
   - type: links
     title: Method Commons
