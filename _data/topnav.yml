@@ -1,0 +1,6 @@
+## Top navigation for the BioFAIR Method Commons
+subitems:
+  - title: Home
+    url: /
+  - title: About
+    url: /about

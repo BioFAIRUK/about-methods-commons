@@ -1,0 +1,80 @@
+#####################################################################
+# BioFAIR Method Commons — ELIXIR Toolkit Theme + BioFAIR branding
+#####################################################################
+
+title: BioFAIR Method Commons
+# Shown in the browser tab / to search engines
+topnav_title: Method Commons
+# Sits next to the logo in the top navigation
+
+description: >-
+  The BioFAIR Method Commons — a shared, FAIR catalogue of methods,
+  protocols and analytical workflows for the BioFAIR programme.
+
+# url: https://biofairuk.github.io   # set to your deployed origin
+# baseurl: /biofair-method-commons    # set if served from a sub-path
+
+#####################################################################
+# Theme
+#####################################################################
+# Local build / GitHub Actions / GitLab use the published gem.
+theme: elixir-toolkit-theme
+#
+# For plain GitHub Pages (no Actions) comment out `theme:` above and
+# uncomment the remote theme below instead:
+# remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.1.0
+
+#####################################################################
+# BioFAIR branding
+#####################################################################
+theme_variables:
+  theme_color: "00785A"          # emerald-deep — browser UI + manifest
+  back_to_top: true
+  breadcrumb: false
+  topnav:
+    theme: light
+    brand_logo: assets/img/biofair-logo.svg
+    search: true
+    github: false
+  # Per-page edit / issue / history buttons — off until a GitHub repo
+  # is configured (set these true and add `github.repository_url` below).
+  github_buttons:
+    edit_me: false
+    open_issue: false
+    history: false
+  # Space Grotesk + IBM Plex Sans/Mono — the BioFAIR type pairing.
+  fonts:
+    - https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap
+  headings:
+    related-pages: Related pages
+    more-information-tiles: More information
+
+#####################################################################
+# Build settings
+#####################################################################
+sass:
+  style: compressed
+
+exclude:
+  - .gitignore
+  - Gemfile*
+  - LICENSE
+  - README.md
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:basename
+      layout: "page"
+      sidebar: main
+
+plugins:
+  - elixir-toolkit-theme-plugins
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  - webrick

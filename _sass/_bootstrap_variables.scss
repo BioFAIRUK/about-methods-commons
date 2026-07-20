@@ -1,0 +1,35 @@
+/* =========================================================
+   BioFAIR brand → ELIXIR Toolkit Theme (Bootstrap 5 layer)
+   Values mirror the BioFAIR Design System tokens (tokens.css:
+   --bf-*). This file is imported before Bootstrap's own
+   variables, so anything set here wins over the framework
+   defaults and the theme's `!default` fallbacks.
+   ========================================================= */
+
+/*-----Theme colours-----*/
+/* Emerald-DEEP is the functional primary: it is the colour the
+   design system designates for text, links and UI on light
+   surfaces (vivid emerald #00A070 fails contrast as text/labels).
+   Buttons, links, active states and h2 all derive from $primary. */
+$primary:   #00785A;   // --bf-emerald-deep
+$secondary: #B00C4C;   // --bf-raspberry-deep (sparing accent; drives h4)
+$light:     #F4F4F1;   // --bf-soft-grey
+$dark:      #14130F;   // --bf-ink
+
+/*-----Body text / links-----*/
+$body-color:      #14130F;   // --bf-ink
+$link-color:      $primary;
+$link-hover-color: #005C45;  // slightly deeper emerald on hover
+
+/*-----Typography (BioFAIR pairing, loaded via Google Fonts in _config.yml)
+       Space Grotesk = display/headings ($font-family-theme)
+       IBM Plex Sans  = body + UI ($font-family-sans-serif / base)
+       IBM Plex Mono  = code/labels ($font-family-monospace) -----*/
+$font-family-sans-serif: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-theme:      "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+/*-----Shape (BioFAIR radii are restrained)-----*/
+$border-radius:    6px;   // --bf-radius-md
+$border-radius-sm: 4px;   // --bf-radius-sm
+$border-radius-lg: 10px;  // --bf-radius-lg

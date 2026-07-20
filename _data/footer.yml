@@ -1,0 +1,22 @@
+copyright: BioFAIR · biofair.uk
+extra_line: >-
+  Built with the ELIXIR Toolkit Theme and the BioFAIR Design System.
+columns:
+  - type: image
+    image_width: 150px
+    width: 3
+    src: 'assets/img/biofair-logo.svg'
+    alt: BioFAIR logo
+  - type: links
+    title: Method Commons
+    width: 3
+    children:
+      - url_text: Home
+        url: /
+      - url_text: About
+        url: /about
+  - type: text
+    width: 4
+    content: |
+      Part of the BioFAIR programme — the Data, Method and People Commons. \
+      Methods are shared openly under FAIR principles.

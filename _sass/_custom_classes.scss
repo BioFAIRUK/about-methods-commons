@@ -1,0 +1,67 @@
+/* =========================================================
+   BioFAIR custom classes — loaded last, on top of the theme.
+   Small, brand-specific additions only; the heavy lifting is
+   done by the Bootstrap variable overrides.
+   ========================================================= */
+
+/*-----Top navigation active underline in brand emerald (already
+       inherits $primary from the theme; kept for the mobile logo)-----*/
+header .navbar .navbar-brand img {
+    max-height: 40px;   // wordmark reads well at this height
+}
+
+/*-----Display headings — Space Grotesk with brand tracking-----*/
+#main h1,
+#main h2,
+.h2-like {
+    letter-spacing: -0.02em;
+}
+#main h1 { letter-spacing: -0.03em; }
+
+/*-----Eyebrow label (mono, uppercase) — mirrors .bf-eyebrow token-----*/
+.bf-eyebrow {
+    font-family: $font-family-monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: $primary;
+}
+
+/*-----Soft brand tints (from --bf-emerald-soft / --bf-raspberry-soft)-----*/
+.bf-bg-emerald-soft   { background-color: #E8F4EE; }
+.bf-bg-raspberry-soft { background-color: #FDE7EE; }
+
+/*-----Home hero — ink surface with the brand emerald accent-----*/
+.bf-hero {
+    background-color: $dark;              // --bf-ink
+    color: #fff;
+    border-radius: $border-radius-lg;
+    padding: 3.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+
+    h1 { color: #fff; }
+
+    .bf-eyebrow { color: #4FD1A6; }       // lightened emerald for dark bg contrast
+
+    .lead { color: rgba(255, 255, 255, 0.82); }
+
+    .btn-hero {
+        --bs-btn-color: #{$dark};
+        --bs-btn-bg: #fff;
+        --bs-btn-border-color: #fff;
+        --bs-btn-hover-color: #{$dark};
+        --bs-btn-hover-bg: #E8F4EE;
+        --bs-btn-hover-border-color: #E8F4EE;
+        font-weight: 600;
+    }
+}
+
+/*-----Concentric-arc backdrop echo on the hero (flat strokes,
+       from the .bf-grid-bg token utility — subtle white lines)-----*/
+.bf-hero.bf-grid {
+    background-image:
+        linear-gradient(to right,  rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 80px 80px;
+}
