@@ -35,8 +35,7 @@ and workflow developers get credit and reuse for FAIR contributions.
 
 A national Galaxy instance, an enterprise-grade Seqera/Nextflow platform,
 and JupyterLab (with containerised support for Snakemake, R and more) on
-AWS — portable to national compute resources such as Isambard-AI and
-ARCHER2 via standard APIs (GA4GH, Conda, RO-Crate).
+AWS, built on standard APIs (GA4GH, Conda, RO-Crate).
 
 ### 2. Workflow discovery
 

@@ -42,7 +42,7 @@ contributions.
   <div class="col"><div class="p-4 bf-bg-grey rounded-3 h-100">
     <span class="bf-eyebrow">01 · Execute</span>
     <h4 class="mt-2">Scalable execution infrastructure</h4>
-    <p class="mb-0">A national Galaxy instance, an enterprise Seqera/Nextflow platform and JupyterLab on AWS — portable to national compute (Isambard-AI, ARCHER2) through standard APIs (GA4GH, Conda, RO-Crate).</p>
+    <p class="mb-0">A national Galaxy instance, an enterprise Seqera/Nextflow platform and JupyterLab on AWS, built on standard APIs (GA4GH, Conda, RO-Crate).</p>
   </div></div>
   <div class="col"><div class="p-4 bf-bg-grey rounded-3 h-100">
     <span class="bf-eyebrow">02 · Discover</span>
