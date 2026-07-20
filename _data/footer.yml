@@ -1,22 +1,24 @@
 copyright: BioFAIR · biofair.uk
 extra_line: >-
-  Built with the ELIXIR Toolkit Theme and the BioFAIR Design System.
+  The Methods Commons is part of the BioFAIR programme, funded by UKRI.
 columns:
   - type: image
-    image_width: 150px
+    image_width: 170px
     width: 3
     src: 'assets/img/biofair-logo.png'
     alt: BioFAIR logo
   - type: links
-    title: Method Commons
+    title: Methods Commons
     width: 3
     children:
-      - url_text: Home
-        url: /
       - url_text: About
         url: /about
+      - url_text: Exemplar Use Cases
+        url: /use-cases
+      - url_text: The team
+        url: /team
   - type: text
     width: 4
     content: |
-      Part of the BioFAIR programme — the Data, Method and People Commons. \
-      Methods are shared openly under FAIR principles.
+      National infrastructure for FAIR computational workflows in the \
+      life sciences — built on Galaxy, Nextflow and WorkflowHub.

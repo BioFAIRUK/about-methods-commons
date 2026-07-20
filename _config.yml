@@ -2,14 +2,15 @@
 # BioFAIR Method Commons — ELIXIR Toolkit Theme + BioFAIR branding
 #####################################################################
 
-title: BioFAIR Method Commons
+title: BioFAIR Methods Commons
 # Shown in the browser tab / to search engines
-topnav_title: Method Commons
+topnav_title: Methods Commons
 # Sits next to the logo in the top navigation
 
 description: >-
-  The BioFAIR Method Commons — a shared, FAIR catalogue of methods,
-  protocols and analytical workflows for the BioFAIR programme.
+  The BioFAIR Methods Commons — UK national infrastructure for FAIR
+  computational workflows in the life sciences, built on Galaxy, Nextflow
+  and WorkflowHub.
 
 # url: https://biofairuk.github.io   # set to your deployed origin
 # baseurl: /biofair-method-commons    # set if served from a sub-path

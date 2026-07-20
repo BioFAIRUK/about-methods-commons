@@ -1,6 +1,10 @@
-## Top navigation for the BioFAIR Method Commons
+## Top navigation for the BioFAIR Methods Commons
 subitems:
   - title: Home
     url: /
   - title: About
     url: /about
+  - title: Use cases
+    url: /use-cases
+  - title: Team
+    url: /team

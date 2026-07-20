@@ -1,7 +1,13 @@
 subitems:
-  - title: BioFAIR Method Commons
+  - title: BioFAIR Methods Commons
     subitems:
       - title: Home
         url: /
       - title: About
         url: /about
+  - title: The programme
+    subitems:
+      - title: Exemplar Use Cases
+        url: /use-cases
+      - title: The team
+        url: /team

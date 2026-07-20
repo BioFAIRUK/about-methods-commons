@@ -1,36 +1,100 @@
 ---
-title: About the Method Commons
+title: About the Methods Commons
 permalink: /about
 sidebar: main
-summary: The shared, FAIR catalogue of methods for the BioFAIR programme.
+summary: UK national infrastructure for FAIR computational workflows in the life sciences.
 ---
 
 ## What it is
 
-The **BioFAIR Method Commons** is a shared catalogue of the methods used
-across the BioFAIR programme — experimental protocols, standard operating
-procedures, and computational and analytical workflows. It exists so that
-the *how* of research is as findable and reusable as the data and the
-people behind it.
+The BioFAIR Methods Commons (MC) is a two-year, UKRI/BioFAIR-funded
+programme to build a UK national infrastructure for FAIR (Findable,
+Accessible, Interoperable, Reusable) computational workflows in the life
+sciences. Led by Carole Goble (University of Manchester) with partners at
+the Earlham Institute and Seqera, the consortium brings together the teams
+behind **Galaxy**, **Nextflow** and the **WorkflowHub** registry — building
+on 20+ years of experience running the European workflow ecosystem — to
+defragment the UK's currently siloed workflow landscape into a single,
+standards-based environment.
 
-## Why it matters
+## Goals and ambitions
 
-Methods are often the least reproducible part of a study — buried in
-supplementary PDFs or lost when a project ends. By treating methods as
-first-class, citable objects the Method Commons makes research across
-BioFAIR:
+The MC's strategic goal is to establish and operate standards-based,
+user-driven technical infrastructure; to engage and onboard the UK research
+community; and to put in place the processes needed for sustainable
+operation — with FAIR practice built in throughout.
 
-- **Findable** — one searchable catalogue, richly described.
-- **Accessible** — openly available, with stable links.
-- **Interoperable** — described with shared vocabularies and metadata.
-- **Reusable** — versioned, licensed and citable.
+The underlying ambition is a **federated, cooperatively-governed commons** —
+not just a hosted service — where diverse workflow systems interoperate,
+users get reproducible results on infrastructure they don't have locally,
+and workflow developers get credit and reuse for FAIR contributions.
 
-## How it fits together
+## The five objectives
 
-The Method Commons is one of the three BioFAIR Commons — Data, Method and
-People — designed to interoperate. A dataset in the Data Commons can point
-to the exact method version that produced it, and to the people in the
-People Commons who ran it.
+### 1. Scalable execution infrastructure
 
-For the visual language used across all three, see the
-[BioFAIR Design System](https://github.com/BioFAIRUK/biofair-design-system).
+A national Galaxy instance, an enterprise-grade Seqera/Nextflow platform,
+and JupyterLab (with containerised support for Snakemake, R and more) on
+AWS — portable to national compute resources such as Isambard-AI and
+ARCHER2 via standard APIs (GA4GH, Conda, RO-Crate).
+
+### 2. Workflow discovery
+
+WorkflowHub as the single access point for discovering, reusing and sharing
+workflows across languages, hosting a curated **BioFAIR Workflow
+Collection** of endorsed, canonical workflows.
+
+### 3. Secure collaboration
+
+A **Shared Project Space** for private, access-controlled management of user
+data and results, using Workflow Run RO-Crate provenance — foreshadowing the
+future BioFAIR Data Commons.
+
+### 4. Community mobilisation
+
+Scaling support from no-code biologists to expert developers, through:
+
+- **Concierge Service** — a tiered, user-led support model covering the whole
+  workflow lifecycle (design, selecting existing workflows, evaluation,
+  debugging), from intensive co-development with Exemplar Use Cases and
+  premium support for complex projects, through self-service onboarding to
+  lighter-touch community outreach.
+- **CRM and direct engagement** — tracking each user and project as a coherent
+  journey rather than isolated tickets, backed by clinics, hackathons, a User
+  Forum and Club, and Champions, with AI agents increasingly automating
+  routine support.
+- **Workflow Observatory** — the quality-assurance layer built into
+  WorkflowHub that curates, tests, benchmarks and FAIR-vets workflows (using
+  tools such as LifeMonitor and the ELIXIR FAIR Checker), issuing quality
+  indicators and endorsement decisions for the BioFAIR Workflow Collection.
+- **Knowledge Hub** — curated guides, playbooks and training materials
+  supporting self-service and onboarding.
+
+### 5. Operational excellence
+
+Governance, playbooks, an operations handbook and standardised APIs embedding
+FAIR practice across the workflow lifecycle — with clear pathways for
+onboarding further workflow systems and agentic AI.
+
+## How it's delivered
+
+Delivery is a two-year, two-phase MVP, organised as eight work packages
+spanning platform DevOps (core infrastructure, workflow execution, the Shared
+Project Space, the Commons Hub/registry) and community work (workflow
+collection curation, concierge support, community engagement and governance).
+
+- **Phase 1 (months 1–12)** — stand up core services, launch the concierge
+  model, and co-design intensively with a small set of workflow-ready
+  Exemplar Use Cases and BioFAIR Fellows to establish features and processes.
+- **Phase 2 (months 12–24)** — shift to feedback-driven feature development,
+  operational consolidation, broader recruitment, integration with other
+  BioFAIR spokes, and support for additional workflow systems (Snakemake, R)
+  and agentic AI.
+- **Beyond (Year 3+)** — transition to a lower-friction "MC-as-a-service"
+  mode, with users interacting mainly through documented APIs and catalogues.
+
+Progress is tracked against milestones — for example, cloud/IaC foundations
+and single sign-on by month 6; Galaxy and Nextflow instances with most
+Exemplar Use Cases onboarded, an MVP RO-Crate catalogue and a Knowledge Hub
+by month 12 — and against KPIs covering usage growth, ecosystem adoption,
+training uptake and FAIR compliance.
