@@ -12,8 +12,8 @@ description: >-
   computational workflows in the life sciences, built on Galaxy, Nextflow
   and WorkflowHub.
 
-# url: https://biofairuk.github.io   # set to your deployed origin
-# baseurl: /biofair-method-commons    # set if served from a sub-path
+url: https://stuzart.github.io      # deployed origin
+baseurl: /biofair-methods-commons   # served from this sub-path (GitHub project page)
 
 #####################################################################
 # Theme
