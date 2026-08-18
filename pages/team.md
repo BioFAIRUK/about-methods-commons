@@ -21,23 +21,6 @@ Management Board (the Project Lead, Project Co-Leads from each partner, and
 the Product Owner). The Project Lead also sits on BioFAIR's central Delivery
 Team for cross-spoke alignment.
 
-## People
-
-| Person | Partner | Role |
-|---|---|---|
-| Carole Goble | Manchester | Project Lead |
-| Irene Papatheodorou | Earlham | Project Lead |
-| Nicola Soranzo | Earlham | Project Co-Lead, Galaxy lead |
-| Stian Soiland-Reyes | Manchester | Project Co-Lead, WorkflowHub, RO-Crate |
-| Evan Floden | Seqera | Project Co-Lead, Nextflow lead |
-| Shoaib Sufi | Manchester | Head of Product & Service (Product Owner; service delivery, MC Incident Lead, Data Protection Lead) |
-| Tom Paine | Earlham | Cloud Systems Engineer, Incident Contact Point |
-| Finn Bacall | Manchester | Digital Research Technical Professional (WorkflowHub) |
-| Stuart Owen | Manchester | Digital Research Technical Professional (WorkflowHub, RO-Crate, Project Space, Observatory) |
-| Phil Ewels | Seqera | Community (nf-core), Bioinformatician |
-| Nick Juty | Manchester | Community Lead, Bioinformatician |
-| Geraldine Van der Auwera | Seqera | Community (Nextflow), Bioinformatician |
-
 ## Heritage
 
 The team draws on 20+ years of jointly building the FAIR workflow ecosystem:
