@@ -13,30 +13,30 @@ search_exclude: false
   <p class="lead mt-3 mb-4" style="max-width: 48rem;">
     The Methods Commons is building UK national infrastructure for
     <strong>Findable, Accessible, Interoperable and Reusable</strong>
-    computational workflows — bringing the teams behind Galaxy, Nextflow
-    and WorkflowHub together to turn a fragmented landscape into a single,
-    standards-based environment.
+    computational workflows, bringing the teams behind Galaxy, Nextflow
+    and WorkflowHub together to join up siloed UK workflow provision into a
+    single, standards-based service.
   </p>
   <a href="{{ '/about' | relative_url }}" class="btn btn-hero btn-lg me-2">About the programme</a>
   <a href="{{ '/use-cases' | relative_url }}" class="btn btn-outline-light btn-lg">Exemplar Use Cases</a>
 </div>
 
-## What it is
+## The programme
 
 The Methods Commons (MC) is a two-year, UKRI/BioFAIR-funded programme to
 build a UK national infrastructure for FAIR computational workflows in the
 life sciences. Led by **Carole Goble** (University of Manchester) with
 partners at the **Earlham Institute** and **Seqera**, it draws on 20+ years
-of running the European workflow ecosystem to defragment the UK's siloed
-workflow landscape into one standards-based environment.
+of running Europe's shared workflow services to join up the UK's currently
+siloed workflow provision into one standards-based environment.
 
-It is designed as a **commons** — a federated, cooperatively-governed shared
-resource, not just a hosted service — where diverse workflow systems
-interoperate, users get reproducible results on infrastructure they don't
-have locally, and workflow developers get credit and reuse for their FAIR
-contributions.
+It is designed as a **commons**: a federated, cooperatively-governed shared
+resource that partners and institutions build together. Diverse workflow
+systems interoperate, users get reproducible results on infrastructure they
+don't have locally, and workflow developers get credit and reuse for their
+FAIR contributions.
 
-## What we're building
+## Building blocks
 
 <div class="row row-cols-1 row-cols-md-2 g-4 my-2">
   <div class="col"><div class="p-4 bf-bg-grey rounded-3 h-100">
@@ -52,20 +52,20 @@ contributions.
   <div class="col"><div class="p-4 bf-bg-grey rounded-3 h-100">
     <span class="bf-eyebrow">03 · Collaborate</span>
     <h4 class="mt-2">Secure collaboration</h4>
-    <p class="mb-0">A Shared Project Space for private, access-controlled data and results, with Workflow Run RO-Crate provenance — foreshadowing the future BioFAIR Data Commons.</p>
+    <p class="mb-0">A Shared Project Space for private, access-controlled data and results, with Workflow Run RO-Crate provenance, foreshadowing the future BioFAIR Data Commons.</p>
   </div></div>
   <div class="col"><div class="p-4 bf-bg-grey rounded-3 h-100">
     <span class="bf-eyebrow">04 · Mobilise</span>
     <h4 class="mt-2">Community mobilisation</h4>
-    <p class="mb-0">A tiered Concierge Service, a quality-assuring Workflow Observatory, and a Knowledge Hub — supporting everyone from no-code biologists to expert developers.</p>
+    <p class="mb-0">A tiered Concierge Service, a quality-assuring Workflow Observatory, and a Knowledge Hub, supporting everyone from no-code biologists to expert developers.</p>
   </div></div>
 </div>
 
-<p class="bf-muted">A fifth strand — <strong>operational excellence</strong> — embeds governance,
+<p class="bf-muted">A fifth strand, <strong>operational excellence</strong>, embeds governance,
 playbooks and standardised APIs (and pathways for agentic AI) across the whole
-workflow lifecycle. <a href="{{ '/about' | relative_url }}">Read more about the objectives →</a></p>
+workflow lifecycle. <a href="{{ '/about' | relative_url }}">Read more about the objectives</a>.</p>
 
-## A partnership
+## The partnership
 
 Three partners each lead the platform they already run internationally:
 the **University of Manchester** (WorkflowHub, RO-Crate, the Shared Project
@@ -97,7 +97,7 @@ scale, and founded Nextflow and nf-core.
 
 ## Part of BioFAIR
 
-The Methods Commons is one spoke of the wider **BioFAIR** programme — a
-BioCommons infrastructure for UK life science — alongside the emerging
+The Methods Commons is one spoke of the wider **BioFAIR** programme, a
+BioCommons infrastructure for UK life science, alongside the emerging
 **Data Commons** and **People Commons**. The Shared Project Space and its
 RO-Crate provenance are a first step towards that connected whole.

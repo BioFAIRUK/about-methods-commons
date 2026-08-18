@@ -6,8 +6,8 @@ summary: Nine real research problems that co-create, stress-test and seed the Me
 ---
 
 Nine pre-selected **Exemplar Use Cases (EUCs)** act as co-creators,
-stress-testers and early adopters — embedding real research problems into
-the development of the Methods Commons and seeding the BioFAIR Workflow
+stress-testers and early adopters. Each embeds a real research problem into
+the development of the Methods Commons and helps seed the BioFAIR Workflow
 Collection.
 
 | # | Focus | Institution(s) | Technologies | Objective |
@@ -18,11 +18,11 @@ Collection.
 | 4 | Spatial transcriptomics (plants) | John Innes Centre, Earlham, QIB | Nextflow, Galaxy | Pipelines for plant spatial transcriptomics |
 | 5 | Single-cell analysis | Oxford, John Radcliffe Hospital | Nextflow, EDAM, Bioconductor, nf-core, Galaxy, WorkflowHub | Packaging, registering and reusing R-based analyses in Galaxy |
 | 6 | Bacterial genomics & epidemiology | Cambridge Veterinary Medicine | Nextflow, phylogeny tools | Short/long-read WGS mapping for variant calling and phylogeny, applied to *M. bovis* transmission studies |
-| 7 | Microbiome & metavirome | Quadram Institute | Nextflow, Galaxy, federated cloud/HPC | Porting internal microbiome/viral pipelines to robust, federated workflows |
+| 7 | Microbiome & metavirome | Quadram Institute | Nextflow, Galaxy, federated cloud/HPC | Porting internal microbiome/viral pipelines to reliable, federated workflows |
 | 8 | Fungal genomics (agri-ecology) | UCL (Eco-flow), RBG Kew | Eco-flow, Nextflow, Seqera, nf-core | Scalable pipelines for analysing degraded historical fungal specimens at scale (Fungarium Sequencing Project) |
 | 9 | Metagenomics & spatial omics (microbiome) | UK Centre for Ecology & Hydrology | Snakemake, Jupyter, Python, RStudio, Isambard-AI | High-throughput eDNA/microbiome pipelines integrated with GIS for national biodiversity and soil-health monitoring |
 
-## How they're chosen
+## Selection criteria
 
 Use cases are selected for readiness, generalisability and impact, technical
 capability, diversity (region, domain and task type), feasibility and
