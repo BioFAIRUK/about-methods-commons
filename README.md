@@ -1,4 +1,5 @@
 # BioFAIR Method Commons
+[biofairuk.github.io/about-methods-commons](https://biofairuk.github.io/about-methods-commons/)
 
 A Jekyll site for the **BioFAIR Method Commons** — the shared, FAIR catalogue
 of methods, protocols and analytical workflows for the BioFAIR programme.
